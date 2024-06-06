@@ -13,8 +13,8 @@ prometheus:
     enabled: true
     type: external
     external:
-      name: ""
-      key: ""
+      name: "kiali"
+      key: "kiali"
     internal:
       jobList:
         - job_name: "istiod"
