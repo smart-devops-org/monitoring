@@ -7,3 +7,6 @@ helmCharts:
     version: 25.21.0
     namespace: monitoring
     valuesFile: values.yaml
+
+resources:
+  - ingress.yaml
