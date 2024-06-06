@@ -256,7 +256,7 @@ prometheus:
     pathType: Prefix
     backend:
       service:
-        name: kube-prometheus-prometheus
+        name: prometheus-server
         port:
           number: 80
     hostname: prometheus.smartseo.kr
