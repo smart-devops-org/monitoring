@@ -1,12 +1,9 @@
 kind: Kustomization
 namespace: monitoring
 helmCharts:
-  - name: prometheus
-    releaseName: prometheus
-    repo: https://prometheus-community.github.io/helm-charts
-    version: 25.21.0
+  - name: kube-prometheus
+    releaseName: kube-prometheus
+    repo: https://charts.bitnami.com/bitnami
+    version: 8.14.2
     namespace: monitoring
     valuesFile: values.yaml
-
-resources:
-  - ingress.yaml
