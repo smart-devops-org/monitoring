@@ -4,6 +4,21 @@ adminPassword: strongpassword
 service:
   enabled: true
   type: NodePort
+listeners:
+  client:
+    protocol: PLAINTEXT
+  controller:
+    protocol: PLAINTEXT
+  interbroker:
+    protocol: PLAINTEXT
+  external:
+    protocol: PLAINTEXT
+
+broker:
+  replicaCount: 1
+  persistence:
+    enabled: true
+    storageClass: "ebs-sc"
 
 ingress:
   enabled: true
